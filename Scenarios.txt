@@ -1,0 +1,30 @@
+1)  Write a Scenario of Whatsapp payment
+
+ -> verify that whatsapp payment is running properly or not.
+ -> verify the payment mode in other borwser it is working or not.
+ -> verify that in another device payment process is successfully or not.
+ -> verify that barcode scanner is properly or not.
+ -> verify the connectivy and internet connection.
+ -> verify the payment process is properly work or not with opposite person.
+ -> verify that in another browser whatsapp payment process running or having some problem or not.
+ -> verify that if whatsapp payment is not working then find how many person they are related with this type of error.
+ -> verify that if any error in whatsapp payment..its error shows properly or not.
+ -> verify the whatsapp payment mode is agree with using other application supported or not.
+ -> verify that application security of any third party mullware.
+ -> verify the upi name showing properly or not in whatsapp.
+
+2) Write a Scenario of whatsapp Group (generate group)
+ 
+ -> verify the whatsapp group security.
+ -> verify the generating group check internet connection.
+ -> verify that group generating process is regularly working or not.
+ -> verify that the persons who have rights to delete message if which is insentitive for other member.
+ -> verify that check how many person you can add when group generating.
+ -> verify that select persons who can drop a message in group.
+ -> verify the member of admin who are selective by group owner.
+ -> verify that internet connectivity is properly or not.
+ -> verify the we can add new member in group properly or not.
+ -> verify that if group created the rules of groups properly.
+ -> verify that admin can remove person id removed on time or not.
+ -> verify that the sending message avaibility in group for 1 week, 1 month etc.
+ -> verify that laptop and pc you can create a group properly ot not.
