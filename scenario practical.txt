@@ -1,0 +1,53 @@
+1)customer is unable to download an invoice from their account.how will you troubleshoot?
+
+-> verify that this problem is one user or multiple user are faces them or not
+-> verify that is the invoice are actually generated to the user or not
+-> verify that invoice status are paid and pending and cancelled or not
+-> verify that and try different browsers 
+-> verify that this invoice is fresh test invoice or not
+-> verify that customer are which device,or mobile app they are using
+-> verify the same user are stagging allowed or not
+-> verify that customer invoice id is that same invoice id or not
+-> verify that this invoice is actually assignd or not
+
+2)a user reports not receiving a confirmation email after signing up.what steps will you take?
+
+-> verify that user exact email address used or not
+-> verify that user multiple time tried signing up or not
+-> verify that user email is there any missing characters or not
+-> verify that user enter the any extra spaces or not
+-> verify that api keys valid or not
+-> verify that backend side is email template exists and is enabled or not
+-> verify that user email is enter same domain email id or not
+
+3)the website works fine in chrome, but the layout breaks in firefox.what will you check?
+
+-> verify that user are cleared firefox cache or not
+-> verify that and check different tools like lembda test
+-> verify that css rendering if any differences or not
+-> verify that and check desktop or mobile mode
+-> verify that browser compatibility for css and js is supported or not
+-> verify that and check firefox inspecter properly supported or not 
+-> verify that website is only chrome specific styles or not
+
+4)application is very slow during peak hours.how will you investigate and report the issue?
+
+-> verify that and check app during peak load hours
+-> verify that number of active connections
+-> verify that and check slow pages and slow api endpoins
+-> verify that cpu usage is hitting normally or not
+-> verify that long running quaries is properly or not
+-> verify that timeout errors and api failures
+-> verify that application is any large css and js file or not
+-> verify that any big images without compression or not
+
+5)login fails only for specific users, even though credentials are correct.how do you debug this?
+
+-> verify that and check user status are properly or not
+-> verify that and check system logs for account locked events is there or not 
+-> verify that password hash mismatch or not
+-> verify that migration script logs
+-> verify that and check user role table entries properly or not
+-> verify that database into the login request hits or not
+-> verify that user sync or merge user data or not
+-> verify that user as compare user records in all dbs or not
