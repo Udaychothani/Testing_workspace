@@ -1,0 +1,24 @@
+
+
+
+Action()
+{
+// Start the transaction for login
+// Open the login page web_url("Open_Login_Page", "URL=https://www.parabank.com/" "TargetFrame=",
+"Resource=0", "RecContentType=text/html", "Referer=", "Snapshot=t1.inf", "Mode=HTML",
+LAST);
+// Correlate a dynamic token (example placeholder) // Usually, you capture a token or session ID from server response web_reg_save_param("session_id", "LB=name=\"sessionToken\" value=\""
+, "RB=\"",
+"Search=Body", LAST);
+// Submit login form with correlated session token (if applicable) web_submit_data("login", "Action=https://www.parabank.com/",
+"Method=POST", "RecContentType=text/html", "Referer=https://www.parabank.com/", ITEMDATA,
+"Name=user-name", "Value=standard_user", ENDITEM, "Name=password", "Value=secret_sauce", ENDITEM,
+// Use correlated session token if required
+//"Name=sessionToken", "Value={session_id}", ENDITEM, LAST);
+lr_end_transaction("Login", LR_AUTO);
+
+// Start transaction to open inventory page lr_start_transaction("Open_Inventory_Page"); web_url("Inventory", "URL=https://www.parabank.com/inventory.html", "TargetFrame=",
+"Resource=0", "RecContentType=text/html", "Referer=https://www.parabank.com/", "Snapshot=t3.inf",
+"Mode=HTML", LAST);
+lr_end_transaction("Open_Inventory_Page", LR_AUTO); return 0;
+}
